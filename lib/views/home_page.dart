@@ -1,3 +1,4 @@
+import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/globals/app_colors.dart';
 import 'package:portfolio_app/globals/app_text_styles.dart';
@@ -59,16 +60,29 @@ class HomePage extends StatelessWidget {
                     "Hello it\'s Me",
                     style: AppTextStyles.montserratStyle(),
                   ),
-                  
                   Constants.sizedBox(height: 15),
-                  
                   Text(
                     "Sandip Shrestha",
                     style: AppTextStyles.montserratStyle(),
                   ),
-                  Text(
-                    "And I\'m a  FullStack Flutter Developer",
-                    style: AppTextStyles.headingStyles(),
+                  Row(
+                    children: [
+                      Text(
+                        "And I\'m a ",
+                        style: AppTextStyles.headingStyles(),
+                      ),
+                      AnimatedTextKit(
+                        animatedTexts: [
+                          TyperAnimatedText('Flutter Developer'),
+                          TyperAnimatedText('ui/ux designer'),
+                          TyperAnimatedText('Wordpress Developer',
+                              textStyle: AppTextStyles.montserratStyle()),
+                        ],
+                        pause: const Duration(milliseconds: 1000),
+                        displayFullTextOnTap: true,
+                        stopPauseOnTap: true,
+                      )
+                    ],
                   )
                 ],
               )
