@@ -25,4 +25,13 @@ class AppTextStyles {
       color: Colors.white,
     );
   }
+
+  static TextStyle normalStyle() {
+    return GoogleFonts.albertSans(
+      fontWeight: FontWeight.w500,
+      fontSize: 17,
+      color: Colors.white,
+      letterSpacing: 1,
+    );
+  }
 }
