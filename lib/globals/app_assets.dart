@@ -4,4 +4,6 @@ class AppAssets {
   static String linkedIn = 'assets/images/in.png';
   static String insta = 'assets/images/insta.png';
   static String twitter = 'assets/images/twit.png';
+  static String profile = 'assets/images/pp.jpeg';
+
 }
