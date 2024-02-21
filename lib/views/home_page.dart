@@ -209,6 +209,7 @@ import 'package:animate_do/animate_do.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/globals/app_assets.dart';
+import 'package:portfolio_app/globals/app_buttons.dart';
 import 'package:portfolio_app/globals/app_colors.dart';
 import 'package:portfolio_app/globals/app_text_styles.dart';
 import 'package:portfolio_app/globals/constants.dart';
@@ -342,7 +343,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                     Constants.sizedBox(height: 18),
-                    buildMaterialButton(onTap: () {}),
+                    AppButtons.buildMaterialButton(onTap: () {}, buttonName: "Download CV"),
                   ],
                 ),
                 const SizedBox(width: 20),
@@ -360,29 +361,29 @@ class HomePage extends StatelessWidget {
   }
 }
 
-MaterialButton buildMaterialButton({
-  required VoidCallback onTap,
-}) {
-  return MaterialButton(
-    onPressed: onTap,
-    color: AppColors.themeColor,
-    splashColor: AppColors.lawGreen,
-    padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
-    shape: OutlineInputBorder(
-      borderRadius: BorderRadius.circular(30),
-      borderSide: BorderSide.none,
-    ),
-    hoverColor: AppColors.oqua,
-    elevation: 6,
-    height: 46,
-    minWidth: 130,
-    focusElevation: 12,
-    child: Text(
-      "Download Cv",
-      style: AppTextStyles.montserratStyle(),
-    ),
-  );
-}
+// MaterialButton buildMaterialButton({
+//   required VoidCallback onTap,
+// }) {
+//   return MaterialButton(
+//     onPressed: onTap,
+//     color: AppColors.themeColor,
+//     splashColor: AppColors.lawGreen,
+//     padding: const EdgeInsets.symmetric(horizontal: 22, vertical: 10),
+//     shape: OutlineInputBorder(
+//       borderRadius: BorderRadius.circular(30),
+//       borderSide: BorderSide.none,
+//     ),
+//     hoverColor: AppColors.oqua,
+//     elevation: 6,
+//     height: 46,
+//     minWidth: 130,
+//     focusElevation: 12,
+//     child: Text(
+//       "Download Cv",
+//       style: AppTextStyles.montserratStyle(),
+//     ),
+//   );
+// }
 
 Widget buildSocialButton({required String asset}) {
   return Ink(

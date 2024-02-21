@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_app/globals/app_colors.dart';
 
 class AppTextStyles {
   static TextStyle headerTextStyle() {
@@ -31,11 +32,21 @@ class AppTextStyles {
   }
 
   static TextStyle normalStyle() {
-    return GoogleFonts.albertSans(
+    return const TextStyle(
       fontWeight: FontWeight.w500,
       fontSize: 17,
       color: Colors.white,
       letterSpacing: 1,
     );
   }
+
+static TextStyle comfortaaStyle() {
+
+
+return GoogleFonts.comfortaa(fontSize: 18, fontWeight: FontWeight.w800, color: AppColors.bgColor);
+
+
+}
+
+
 }
