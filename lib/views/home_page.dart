@@ -212,10 +212,11 @@ import 'package:portfolio_app/globals/app_assets.dart';
 import 'package:portfolio_app/globals/app_colors.dart';
 import 'package:portfolio_app/globals/app_text_styles.dart';
 import 'package:portfolio_app/globals/constants.dart';
+import 'package:portfolio_app/views/about_me.dart';
 import 'package:portfolio_app/widgets/profile_animation.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key});
+  const HomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -258,8 +259,8 @@ class HomePage extends StatelessWidget {
       body: SingleChildScrollView(
         padding: EdgeInsets.only(
           top: size.height * 0.1,
-          left: size.width * 0.1,
-          right: size.width * 0.1,
+         // left: size.width * 0.1,
+        //  right: size.width * 0.1,
         ),
         child: Column(
           //crossAxisAlignment: CrossAxisAlignment.start,
@@ -271,7 +272,7 @@ class HomePage extends StatelessWidget {
                 Column(
                   children: [
                     FadeInDown(
-                      duration: Duration(milliseconds: 1200),
+                      duration: const Duration(milliseconds: 1200),
                       child: Text(
                         "Hello it's Me",
                         style: AppTextStyles.montserratStyle(),
@@ -279,7 +280,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Constants.sizedBox(height: 15),
                     FadeInRight(
-                      duration: Duration(milliseconds: 1200),
+                      duration: const Duration(milliseconds: 1200),
                       child: Text(
                         "Sandip Shrestha",
                         style: AppTextStyles.montserratStyle(),
@@ -317,7 +318,7 @@ class HomePage extends StatelessWidget {
                     ),
                     Constants.sizedBox(height: 15),
                     FadeInDown(
-                      duration: Duration(milliseconds: 1800),
+                      duration: const Duration(milliseconds: 1800),
                       child: SizedBox(
                         width: size.width * 0.5,
                         child: Text(
@@ -351,6 +352,7 @@ class HomePage extends StatelessWidget {
             const SizedBox(
               height: 400,
             ),
+            const AboutMe(),
           ],
         ),
       ),

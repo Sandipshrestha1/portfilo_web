@@ -18,11 +18,15 @@ class AppTextStyles {
     );
   }
 
-  static TextStyle headingStyles() {
+  static TextStyle headingStyles({
+    double fontSize = 36,
+    Color color = Colors.white,
+  }) {
     return GoogleFonts.rubikMonoOne(
-      fontSize: 30,
-      fontWeight: FontWeight.w600,
-      color: Colors.white,
+      fontSize: fontSize,
+      fontWeight: FontWeight.bold,
+      color: color,
+      letterSpacing: 2,
     );
   }
 

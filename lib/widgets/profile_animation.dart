@@ -1,11 +1,11 @@
-//  
 import 'package:flutter/material.dart';
 import 'package:portfolio_app/globals/app_assets.dart';
 
 class ProfileAnimation extends StatefulWidget {
-  const ProfileAnimation({Key? key}) : super(key: key);
+  const ProfileAnimation({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _ProfileAnimationState createState() => _ProfileAnimationState();
 }
 
@@ -19,12 +19,12 @@ class _ProfileAnimationState extends State<ProfileAnimation>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 1),
+      duration: const Duration(seconds: 3),
     )..repeat(reverse: true);
 
     _animation = Tween<Offset>(
-      begin: Offset.zero,
-      end: const Offset(0, 0.9),
+      begin: const Offset(0, 0.1),
+      end: const Offset(0, 0.1),
     ).animate(_controller);
   }
 

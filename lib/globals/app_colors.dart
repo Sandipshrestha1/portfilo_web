@@ -5,7 +5,5 @@ class AppColors {
   static Color themeColor = const Color(0xff007BA7);
   static Color oqua = const Color(0xff007BA7);
   static Color lawGreen = const Color(0xff7CFC00);
-
-
-
+  static Color bgColor2 = const Color(0xff006D6F);
 }
