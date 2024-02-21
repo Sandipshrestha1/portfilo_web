@@ -212,6 +212,7 @@ import 'package:portfolio_app/globals/app_assets.dart';
 import 'package:portfolio_app/globals/app_colors.dart';
 import 'package:portfolio_app/globals/app_text_styles.dart';
 import 'package:portfolio_app/globals/constants.dart';
+import 'package:portfolio_app/widgets/profile_animation.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key});
@@ -344,11 +345,11 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
                 const SizedBox(width: 20),
-                Image.asset(AppAssets.profile,
-                 width: 360,
-                  height: 390,
-                  ),
+                const ProfileAnimation(),
               ],
+            ),
+            const SizedBox(
+              height: 400,
             ),
           ],
         ),
