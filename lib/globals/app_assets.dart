@@ -5,5 +5,5 @@ class AppAssets {
   static String insta = 'assets/images/insta.png';
   static String twitter = 'assets/images/twit.png';
   static String profile = 'assets/images/pp.jpeg';
-
+  static String  code = 'assets/images/coding.png';
 }
