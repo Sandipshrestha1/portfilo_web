@@ -262,7 +262,7 @@ class _MyServiceState extends State<MyService> {
           color: AppColors.bgColor2,
           borderRadius: BorderRadius.circular(30),
 
-border: isHover ? Border.all(color: AppColors.themeColor, width: 3) : null,  
+border: isHover ? Border.all(color: AppColors.red, width: 3) : null,  
 
 
           boxShadow: const [
